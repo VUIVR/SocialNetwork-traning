@@ -22,3 +22,7 @@
     align-items: center;
     border-radius: 5px;
 }
+
+hr {
+    margin: 10px 0;
+}

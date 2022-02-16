@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
+import PostForm from './Components/PostForm';
 import PostList from './Components/PostList';
-
-
 
 
 function App() {
@@ -9,13 +8,17 @@ function App() {
     { id: 1, title: 'Firth head', body: 'body firth' },
     { id: 2, title: 'head', body: 'body sec' },
     { id: 3, title: 'asdad', body: 'body tree' }
-])
+  ])
 
+  function createPost(newPost) {
+    setPosts([...posts, newPost])
+  }
 
   return (
     <div className='App'>
-      <PostList posts={posts} title='Список постов JS'/>
-     
+      <PostForm create={createPost}/>
+      <PostList posts={posts} title='Список постов JS' />
+
     </div>
   );
 }

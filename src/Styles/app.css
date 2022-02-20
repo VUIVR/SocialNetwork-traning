@@ -44,3 +44,23 @@ hr {
     opacity: 0;
     transition: opacity 500ms ease-in;
 }
+
+.pages__wrapper {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages {
+    padding: 5px 15px;
+    color: coral;
+    background-color: transparent;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.page__current {
+    border: 2px solid chocolate;
+    font-weight: bold;
+}

@@ -79,4 +79,19 @@ hr {
 
 .navbar__links {
     margin: auto;
+    color: #930101;
+    border: 1px solid #930101;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    text-decoration: none;
 }
+
+.exit__btn {
+    border: 1px solid #930101;
+    border-radius: 5px;
+    background-color: transparent;
+    color:#930101;
+    padding: 11px;
+}
+

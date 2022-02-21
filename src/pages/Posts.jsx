@@ -7,6 +7,7 @@ import Mybutton from '../Components/UI/Button/MyButton';
 import Loader from '../Components/UI/Loader/Loader';
 import MyModal from '../Components/UI/Modal/MyModal';
 import Pagination from '../Components/UI/Pagination/Pagination';
+import MySelect from '../Components/UI/Select/MySelect';
 import { useFetching } from '../Hooks/useFetching';
 import { usePosts } from '../Hooks/usePosts';
 import { getPagesCount, getPagesArray } from '../Utils/pages';
@@ -30,7 +31,7 @@ function Posts() {
 
   useEffect(() => {
     fetchPosts(limit, page)
-  }, [])
+  }, [limit])
 
   const changePage = (page) => {
     setPage(page)
@@ -60,13 +61,23 @@ function Posts() {
       <MyModal
         visible={modal}
         setVisible={setModal}>
-
         <PostForm create={createPost} /> {/* форма создания поста */}
       </MyModal>
 
       <hr />
       {/* блок сортировки и поиска */}
       <PostFilter filter={filter} setFilter={setFilter} />
+      <MySelect
+        defaultValue='Кол-во постов на странице'
+        value={limit}
+        onChange={value => setLimit(value)}
+        options={[
+          { value: 5, name: '5' },
+          { value: 10, name: '10' },
+          { value: 20, name: '20' },
+          { value: -1, name: 'Все' },
+        ]}
+      />
 
       {/* блок вывода постов */}
       <hr />

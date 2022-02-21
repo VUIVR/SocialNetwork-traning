@@ -5,12 +5,16 @@ import Posts from "../pages/Posts";
 import SinglePost from '../pages/SinglePost'
 
 
-const RoutersUrl = [
-    {path: '/About', component:<About/>},
-    {path: '/Posts', component:<Posts/>},
-    {path: '/Posts/:id', component:<SinglePost/>},
-    {path: '/Login', component:<Login/>},
-    {path: '*', component:<EmptyPage/>}
+export const privatRouters = [
+    { path: '/', component: <Posts /> },
+    { path: '/About', component: <About /> },
+    { path: '/Posts', component: <Posts /> },
+    { path: '/Posts/:id', component: <SinglePost /> },
+    { path: '*', component: <EmptyPage /> }
 ]
 
-export default RoutersUrl
+export const publicRouters = [
+    { path: '/', component: <Login /> },
+    { path: '/About', component: <About /> },
+    { path: '*', component: <Login /> }
+]

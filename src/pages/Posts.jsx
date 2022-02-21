@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PostService from '../API/PostService';
-import PostFilter from '../Components/postFilter';
-import PostForm from '../Components/PostForm';
-import PostList from '../Components/PostList';
+import PostFilter from '../Components/Posts/postFilter';
+import PostForm from '../Components/Posts/PostForm';
+import PostList from '../Components/Posts/PostList';
 import Mybutton from '../Components/UI/Button/MyButton';
 import Loader from '../Components/UI/Loader/Loader';
 import MyModal from '../Components/UI/Modal/MyModal';

@@ -1,6 +1,7 @@
 import React from 'react'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import PostItem from './PostItem'
+import st from "./post.module.css"
 
 
 

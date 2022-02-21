@@ -1,6 +1,6 @@
 import React from 'react'
-import MyImput from './UI/input/MyInput'
-import MySelect from './UI/Select/MySelect'
+import MyImput from '../UI/input/MyInput'
+import MySelect from '../UI/Select/MySelect'
 
 
 function PostFilter({filter, setFilter}) {

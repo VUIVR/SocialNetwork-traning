@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import AuthContext from '../../../Context'
+import st from './Navbar.module.css'
 
 
 
@@ -13,10 +14,10 @@ function Navbar() {
   }
 
   return (
-    <div className='navbar'>
-      <Link to="/About" className='navbar__links'>About</Link>
-      <Link to="/Posts" className='navbar__links'>Posts</Link>
-      <button onClick={Exit} className='exit__btn'>Exit</button>
+    <div className={st.navbar}>
+      <Link to="/About" className={st.navbar__links}>About</Link>
+      <Link to="/Posts" className={st.navbar__links}>Posts</Link>
+      <button onClick={Exit} className={st.exit__btn}>Exit</button>
     </div>
 
   )

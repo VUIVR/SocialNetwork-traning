@@ -1,0 +1,23 @@
+.pagesWrapper {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pages {
+    padding: 5px 15px;
+    color: coral;
+    background-color: transparent;
+    border: 1px solid chocolate;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 48px;
+    text-align: center;
+    margin: 1px;
+}
+
+.pageCurrent {
+    border: 2px solid chocolate;
+    font-weight: bold;
+}

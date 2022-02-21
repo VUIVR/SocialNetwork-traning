@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
-import MyImput from './UI/input/MyInput';
-import Mybutton from './UI/Button/MyButton';
+import MyImput from '../UI/input/MyInput';
+import Mybutton from '../UI/Button/MyButton';
 
 function PostForm({create}) {
 

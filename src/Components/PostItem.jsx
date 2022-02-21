@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import '../Styles/app.css'
 import Mybutton from './UI/Button/MyButton';
 
-const PostItem = (props) => {
-   
+
+function PostItem(props) {
+    
     return (
         <div className='post'>
             <div className='post__content'>
@@ -11,7 +14,8 @@ const PostItem = (props) => {
                 <div>{props.post.body}</div>
             </div>
             <div className='post__btns'>
-                <Mybutton onClick={() => {props.remove(props.post)}  }>Delete</Mybutton>
+                <Link to={`/Posts/${props.post.id}`}><Mybutton>Open</Mybutton></Link>  
+                <Mybutton onClick={() => { props.remove(props.post) }}>Delete</Mybutton>
             </div>
         </div>
     )

@@ -19,6 +19,7 @@ hr {
     border-top: 1px solid #930101;
 }
 
+/* дляплавного появления поста */
 .post-enter {
     opacity: 0;
 }
